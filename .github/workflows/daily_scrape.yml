@@ -1,0 +1,52 @@
+name: Daily Job Scraper
+
+# Trigger: Run every day at 8:00 AM UTC
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  # Allow manual trigger (so we can test it immediately)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-process:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the repo code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. Run the Scraper
+      - name: Run Scraper
+        run: python src/scraper.py
+
+      # 5. Run the Processor (ETL)
+        # Only run if scraper succeeded
+      - name: Run Processor
+        if: success()
+        run: python src/processor.py
+
+      # 6. Commit and Push the New Data
+      # This saves the csv files back to your repo so you have history!
+      - name: Commit and Push Data
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add data/
+          git commit -m "data: Auto-update job listings [skip ci]" || echo "No changes to commit"
+          git push
