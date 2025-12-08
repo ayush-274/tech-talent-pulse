@@ -3,7 +3,8 @@ name: Daily Job Scraper
 # Trigger: Run every day at 8:00 AM UTC
 on:
   schedule:
-    - cron: '0 8 * * *'
+    # 2:30 AM UTC = 8:00 AM IST
+    - cron: '30 2 * * *'
   # Allow manual trigger (so we can test it immediately)
   workflow_dispatch:
 
