@@ -1,0 +1,25 @@
+skill,count,date
+javascript,12,2026-02-24
+react,11,2026-02-24
+typescript,10,2026-02-24
+ai,10,2026-02-24
+ci/cd,8,2026-02-24
+git,7,2026-02-24
+python,7,2026-02-24
+aws,6,2026-02-24
+sql,5,2026-02-24
+docker,5,2026-02-24
+node.js,4,2026-02-24
+azure,3,2026-02-24
+postgresql,3,2026-02-24
+mysql,3,2026-02-24
+gcp,2,2026-02-24
+java,2,2026-02-24
+vue,2,2026-02-24
+pytorch,1,2026-02-24
+tensorflow,1,2026-02-24
+fastapi,1,2026-02-24
+linux,1,2026-02-24
+machine learning,1,2026-02-24
+agile,1,2026-02-24
+scrum,1,2026-02-24
