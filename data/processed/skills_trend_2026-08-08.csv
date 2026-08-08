@@ -1,0 +1,28 @@
+skill,count,date
+ai,13,2026-08-08
+typescript,7,2026-08-08
+javascript,7,2026-08-08
+python,5,2026-08-08
+sql,5,2026-08-08
+react,5,2026-08-08
+aws,4,2026-08-08
+docker,4,2026-08-08
+gcp,4,2026-08-08
+kubernetes,4,2026-08-08
+java,3,2026-08-08
+postgresql,3,2026-08-08
+linux,2,2026-08-08
+git,2,2026-08-08
+azure,2,2026-08-08
+mysql,2,2026-08-08
+redis,2,2026-08-08
+django,2,2026-08-08
+ci/cd,2,2026-08-08
+vue,1,2026-08-08
+machine learning,1,2026-08-08
+flask,1,2026-08-08
+fastapi,1,2026-08-08
+agile,1,2026-08-08
+spring boot,1,2026-08-08
+mongodb,1,2026-08-08
+node.js,1,2026-08-08
