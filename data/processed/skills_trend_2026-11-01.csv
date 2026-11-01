@@ -1,0 +1,27 @@
+skill,count,date
+ai,16,2026-11-01
+python,11,2026-11-01
+aws,11,2026-11-01
+machine learning,10,2026-11-01
+react,7,2026-11-01
+typescript,7,2026-11-01
+node.js,7,2026-11-01
+javascript,6,2026-11-01
+java,6,2026-11-01
+gcp,5,2026-11-01
+sql,4,2026-11-01
+kubernetes,4,2026-11-01
+azure,4,2026-11-01
+angular,3,2026-11-01
+vue,3,2026-11-01
+ci/cd,3,2026-11-01
+pytorch,3,2026-11-01
+git,3,2026-11-01
+tensorflow,3,2026-11-01
+agile,2,2026-11-01
+terraform,2,2026-11-01
+linux,1,2026-11-01
+mysql,1,2026-11-01
+spring boot,1,2026-11-01
+pandas,1,2026-11-01
+postgresql,1,2026-11-01
